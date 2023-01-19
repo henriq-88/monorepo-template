@@ -1,0 +1,49 @@
+{
+  "name": "@wassdahl/ui",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "clean": "rd /s /q .turbo node_modules",
+    "lint": "eslint",
+    "type-check": "tsc --noEmit",
+    "dev": "start-storybook -p 6006 --no-open",
+    "dev2": "concurrently \"pnpm dev:css\" \"pnpm dev:storybook\"",
+    "dev:css": "npx tailwindcss-cli -i ./src/styles/global.css -o ./public/global.css --watch",
+    "dev:storybook": "start-storybook -p 6006 --no-open",
+    "build": "concurrently \"pnpm build:css\" \"pnpm build:storybook\"",
+    "build:css": "npx tailwindcss-cli -i ./src/styles/global.css -o ./public/global.css",
+    "build:storybook": "build-storybook -o ./dist"
+  },
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "dependencies": {
+    "@wassdahl/tailwind-config": "*",
+    "class-variance-authority": "0.4.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.20.12",
+    "@storybook/addon-actions": "6.5.15",
+    "@storybook/addon-essentials": "6.5.15",
+    "@storybook/addon-interactions": "6.5.15",
+    "@storybook/addon-links": "6.5.15",
+    "@storybook/addon-postcss": "2.0.0",
+    "@storybook/builder-webpack5": "6.5.15",
+    "@storybook/manager-webpack5": "6.5.15",
+    "@storybook/react": "6.5.15",
+    "@storybook/testing-library": "0.0.13",
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.10",
+    "autoprefixer": "^10.4.13",
+    "babel-loader": "8.3.0",
+    "concurrently": "7.6.0",
+    "dotenv-cli": "^6.0.0",
+    "eslint": "^8.31.0",
+    "postcss": "^8.4.21",
+    "storybook-addon-sass-postcss": "0.1.3",
+    "tailwindcss": "^3.2.4",
+    "typescript": "^4.9.4"
+  }
+}

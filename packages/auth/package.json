@@ -1,0 +1,24 @@
+{
+  "name": "@wassdahl/auth",
+  "version": "0.1.0",
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rd /s /q .turbo node_modules",
+    "lint": "eslint",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@wassdahl/db": "*",
+    "@next-auth/prisma-adapter": "^1.0.5",
+    "next": "^13.1.2",
+    "next-auth": "^4.18.8",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.31.0",
+    "typescript": "^4.9.4"
+  }
+}
