@@ -15,6 +15,10 @@ const config = {
     "@wassdahl/db",
     "@wassdahl/ui",
   ],
+  i18n: {
+    locales: ["en"],
+    defaultLocale: "en",
+  },
   /** We already do linting and typechecking as separate tasks in CI */
   eslint: { ignoreDuringBuilds: !!process.env.CI },
   typescript: { ignoreBuildErrors: !!process.env.CI },

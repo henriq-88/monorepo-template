@@ -11,7 +11,12 @@ let index = 0;
 const ProjectDetailsPage: React.FC<ProjectDetailsPageProps> = (props) => {
   const projectSlug = useProjectSlug();
   const { data, isLoading } = api.post.byTitleSlug.useQuery(
-    projectSlugToTitleSearch(projectSlug ?? ``),
+    {
+      titleSlug: projectSlugToTitleSearch(projectSlug ?? ``),
+    },
+    {
+      enabled: !!projectSlug,
+    },
   );
 
   const { addQueryParams } = useQueryParams();

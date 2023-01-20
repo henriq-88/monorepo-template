@@ -65,14 +65,18 @@ export const createTRPCContext = async (opts: CreateNextContextOptions) => {
  * transformer
  */
 import { initTRPC, TRPCError } from "@trpc/server";
+import { OpenApiMeta } from "trpc-openapi";
 import superjson from "superjson";
 
-const t = initTRPC.context<typeof createTRPCContext>().create({
-  transformer: superjson,
-  errorFormatter({ shape }) {
-    return shape;
-  },
-});
+const t = initTRPC
+  .meta<OpenApiMeta>()
+  .context<typeof createTRPCContext>()
+  .create({
+    transformer: superjson,
+    errorFormatter({ shape }) {
+      return shape;
+    },
+  });
 
 /**
  * 3. ROUTER & PROCEDURE (THE IMPORTANT BIT)
