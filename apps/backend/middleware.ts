@@ -2,7 +2,11 @@ import type { NextApiHandler, NextApiRequest, NextApiResponse } from "next";
 import Cors from "cors";
 
 const cors = Cors({
-  origin: [/https?:\/\/localhost:\d{4,5}/, /https:\/\/(.*\.)?wassdahl\.dev/],
+  origin: [
+    /https?:\/\/localhost:\d{4,5}/,
+    /https:\/\/(.*\.)?wassdahl\.dev/,
+    /https:\/\/monorepo-template-.+-henriq-88\.vercel\.app/,
+  ],
 });
 
 function runMiddleware(
