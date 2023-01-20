@@ -24,7 +24,7 @@ importers:
       prettier-plugin-tailwindcss: 0.2.1_prettier@2.8.3
       turbo: 1.7.0
       typescript: 4.9.4
-    devDependencies:
+    optionalDependencies:
       husky: 8.0.3
 
   apps/admin:
@@ -8189,7 +8189,8 @@ packages:
     resolution: {integrity: sha512-+dQSyqPh4x1hlO1swXBiNb2HzTDN1I2IGLQx1GrBuiqFJfoMrnZWwVmatvSiO+Iz8fBUnf+lekwNo4c2LlXItg==}
     engines: {node: '>=14'}
     hasBin: true
-    dev: true
+    dev: false
+    optional: true
 
   /iconv-lite/0.4.24:
     resolution: {integrity: sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==}
