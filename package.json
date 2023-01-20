@@ -14,8 +14,7 @@
     "lint": "turbo lint",
     "FIXME:lint": "turbo lint && manypkg check",
     "type-check": "turbo type-check",
-    "start": "turbo start --parallel",
-    "prepare": "npx husky install"
+    "start": "turbo start --parallel"
   },
   "dependencies": {
     "@manypkg/cli": "^0.19.2",
