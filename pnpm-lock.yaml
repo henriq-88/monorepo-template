@@ -152,6 +152,7 @@ importers:
       '@trpc/next': ^10.9.0
       '@trpc/react-query': ^10.9.0
       '@trpc/server': ^10.9.0
+      '@types/async': 3.2.16
       '@types/node': ^18.11.18
       '@types/react': ^18.0.26
       '@types/react-dom': ^18.0.10
@@ -160,6 +161,7 @@ importers:
       '@wassdahl/db': '*'
       '@wassdahl/tailwind-config': '*'
       '@wassdahl/ui': '*'
+      async: 3.2.4
       autoprefixer: ^10.4.13
       dotenv-cli: ^6.0.0
       eslint: ^8.31.0
@@ -186,6 +188,7 @@ importers:
       '@wassdahl/db': link:../../packages/db
       '@wassdahl/tailwind-config': link:../../packages/config/tailwind
       '@wassdahl/ui': link:../../packages/ui
+      async: 3.2.4
       next: 13.1.2_biqbaboplfbrettd7655fr4n2y
       next-auth: 4.18.8_7jnwqgtpcnwg4nzft4b6xlzlfi
       react: 18.2.0
@@ -193,6 +196,7 @@ importers:
       slugify: 1.6.5
       zod: 3.20.2
     devDependencies:
+      '@types/async': 3.2.16
       '@types/node': 18.11.18
       '@types/react': 18.0.26
       '@types/react-dom': 18.0.10
@@ -3955,6 +3959,10 @@ packages:
     resolution: {integrity: sha512-XTIieEY+gvJ39ChLcB4If5zHtPxt3Syj5rgZR+e1ctpmK8NjPf0zFqsz4JpLJT0xla9GFDKjy8Cpu331nrmE1Q==}
     dev: true
 
+  /@types/async/3.2.16:
+    resolution: {integrity: sha512-jnlGp5Z/cAZ7JVYyLnSDuYJ+YyYm0o2yzL8Odv6ckWmGMow3j/P/wgfziybB044cXXA93lEuymJyxVR8Iz2amQ==}
+    dev: true
+
   /@types/cors/2.8.13:
     resolution: {integrity: sha512-RG8AStHlUiV5ysZQKq97copd2UmVYw3/pRMLefISZ3S1hK104Cwm7iLQ3fTKx+lsUH2CE8FlLaYeEA2LSeqYUA==}
     dependencies:
@@ -4936,6 +4944,10 @@ packages:
     resolution: {integrity: sha512-z/WhQ5FPySLdvREByI2vZiTWwCnF0moMJ1hK9YQwDTHKh6I7/uSckMetoRGb5UBZPC1z0jlw+n/XCgjeH7y1AQ==}
     dev: true
     optional: true
+
+  /async/3.2.4:
+    resolution: {integrity: sha512-iAB+JbDEGXhyIUavoDl9WP/Jj106Kz9DEn1DPgYw5ruDn0e3Wgi3sKFm55sASdGBNOQB8F59d9qQ7deqrHA8wQ==}
+    dev: false
 
   /asynckit/0.4.0:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}

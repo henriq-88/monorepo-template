@@ -1,15 +1,28 @@
 import { NotFoundError } from "@wassdahl/ui";
 import { api } from "../../../../api";
+import { useQueryParams } from "../../../../utils/queryParams";
 import Background from "../../../Core/Background";
 import { projectSlugToTitleSearch, useProjectSlug } from "./utils";
 
 interface ProjectDetailsPageProps {}
+
+let index = 0;
 
 const ProjectDetailsPage: React.FC<ProjectDetailsPageProps> = (props) => {
   const projectSlug = useProjectSlug();
   const { data, isLoading } = api.post.byTitleSlug.useQuery(
     projectSlugToTitleSearch(projectSlug ?? ``),
   );
+
+  const { addQueryParams } = useQueryParams();
+
+  const handleUpdateQueryParams = () => {
+    addQueryParams({ test: `test-${index++}` });
+  };
+
+  // const { mutate } = api.post.create.useMutation({
+  //   onMutate: (newPost) => {},
+  // });
 
   if (isLoading) {
     return (
@@ -43,6 +56,7 @@ const ProjectDetailsPage: React.FC<ProjectDetailsPageProps> = (props) => {
         fromGradientClassName="from-[#2e026d]"
         toGradientClassName="to-[#15162c]"
       >
+        <button onClick={handleUpdateQueryParams}>Create</button>
         <div className="container flex flex-1 flex-col items-center justify-center gap-12 self-center px-4 py-8">
           <h1 className="text-5xl font-extrabold tracking-tight sm:text-[5rem]">
             <span className="text-[hsl(280,100%,70%)]">{data?.title}</span>
