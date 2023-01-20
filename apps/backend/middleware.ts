@@ -4,8 +4,9 @@ import Cors from "cors";
 const cors = Cors({
   origin: [
     /https?:\/\/localhost:\d{4,5}/,
-    /https:\/\/(.*\.)?wassdahl\.dev/,
-    /https:\/\/monorepo-template-.+-henriq-88\.vercel\.app/,
+    /https:\/\/monorepo-template(-\w+)\.vercel\.app/, // e.g. https://monorepo-template-web.vercel.app
+    /https:\/\/monorepo-template(-\w+)-henriq-88\.vercel\.app/, // e.g. https://monorepo-template-orebq1szf-henriq-88.vercel.app or https://monorepo-template-web-henriq-88.vercel.app
+    /https:\/\/monorepo-template(-\w+)-git-main-henriq-88\.vercel\.app/, // e.g. https://monorepo-template-web-git-main-henriq-88.vercel.app
   ],
 });
 
