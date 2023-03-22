@@ -33,7 +33,7 @@ importers:
     specifiers:
       '@next/font': 13.1.2
       '@tanstack/react-query': ^4.28.0
-      '@tanstack/react-query-devtools': 4.22.0
+      '@tanstack/react-query-devtools': 4.28.0
       '@trpc/client': ^10.17.0
       '@trpc/next': ^10.17.0
       '@trpc/react-query': ^10.17.0
@@ -61,7 +61,7 @@ importers:
     dependencies:
       '@next/font': 13.1.2
       '@tanstack/react-query': 4.28.0_biqbaboplfbrettd7655fr4n2y
-      '@tanstack/react-query-devtools': 4.22.0_q4teel2yjbizrm4naiaqcdpjum
+      '@tanstack/react-query-devtools': 4.28.0_q4teel2yjbizrm4naiaqcdpjum
       '@trpc/client': 10.17.0_@trpc+server@10.17.0
       '@trpc/next': 10.17.0_odcsobxw7udv3234yskut3r4vy
       '@trpc/react-query': 10.17.0_nln23i7o54o7cjzbabmwtrulee
@@ -156,7 +156,7 @@ importers:
   apps/web:
     specifiers:
       '@tanstack/react-query': ^4.28.0
-      '@tanstack/react-query-devtools': 4.22.0
+      '@tanstack/react-query-devtools': 4.28.0
       '@trpc/client': ^10.17.0
       '@trpc/next': ^10.17.0
       '@trpc/react-query': ^10.17.0
@@ -186,7 +186,7 @@ importers:
       zod: ^3.21.4
     dependencies:
       '@tanstack/react-query': 4.28.0_biqbaboplfbrettd7655fr4n2y
-      '@tanstack/react-query-devtools': 4.22.0_q4teel2yjbizrm4naiaqcdpjum
+      '@tanstack/react-query-devtools': 4.28.0_q4teel2yjbizrm4naiaqcdpjum
       '@trpc/client': 10.17.0_@trpc+server@10.17.0
       '@trpc/next': 10.17.0_odcsobxw7udv3234yskut3r4vy
       '@trpc/react-query': 10.17.0_nln23i7o54o7cjzbabmwtrulee
@@ -4190,10 +4190,10 @@ packages:
     resolution: {integrity: sha512-sm+QncWaPmM73IPwFlmWSKPqjdTXZeFf/7aEmWh00z7yl2FjqophPt0dE1EHW9P1giMC5rMviv7OUbSDmWzXXA==}
     dev: false
 
-  /@tanstack/react-query-devtools/4.22.0_q4teel2yjbizrm4naiaqcdpjum:
-    resolution: {integrity: sha512-YeYFBnfqvb+ZlA0IiJqiHNNSzepNhI1p2o9i8NlhQli9+Zrn230M47OBaBUs8qr3DD1dC2zGB1Dis50Ktz8gAA==}
+  /@tanstack/react-query-devtools/4.28.0_q4teel2yjbizrm4naiaqcdpjum:
+    resolution: {integrity: sha512-1SnoMw1CWn8FdPEIHvlAzmMBX3heXJo11fyBtt+FzYAHj5yFC8P67Kpgi0HpLkY7SLnd6QK/7qFkpeH4AQbgZg==}
     peerDependencies:
-      '@tanstack/react-query': 4.22.0
+      '@tanstack/react-query': 4.28.0
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
