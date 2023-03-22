@@ -2,7 +2,6 @@ import { createTRPCNext } from "@trpc/next";
 import { httpBatchLink, loggerLink } from "@trpc/client";
 import { inferRouterInputs, inferRouterOutputs } from "@trpc/server";
 import type { AppRouter } from "@wassdahl/api";
-import {} from "@wassdahl/ui";
 import { transformer } from "@wassdahl/api/transformer";
 import { env } from "../env/client.mjs";
 

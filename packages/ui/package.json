@@ -7,7 +7,8 @@
     "lint": "eslint",
     "type-check": "tsc --noEmit",
     "dev": "start-storybook -p 6006 --no-open",
-    "build": "build-storybook -o ./dist"
+    "build": "build-storybook -o ./dist",
+    "start": "npx http-server ./dist -p 6007"
   },
   "main": "./index.ts",
   "types": "./index.ts",
