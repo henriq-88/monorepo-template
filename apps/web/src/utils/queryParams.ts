@@ -4,20 +4,20 @@ import { ParsedUrlQueryInput } from "querystring";
 import { useCallback } from "react";
 
 const queryParamsQueue = queue(
+  // eslint-disable-next-line @typescript-eslint/no-misused-promises
   async ({
     router,
     params,
   }: {
     router: NextRouter;
     params: ParsedUrlQueryInput;
-  }) => {
-    return router.replace({
+  }) =>
+    router.replace({
       query: {
         ...router.query,
         ...params,
       },
-    });
-  },
+    }),
   1,
 );
 
@@ -26,7 +26,7 @@ export const useQueryParams = () => {
 
   const addQueryParamsLast = useCallback(
     (params: ParsedUrlQueryInput) => {
-      queryParamsQueue.push({ router, params });
+      void queryParamsQueue.push({ router, params });
     },
     [router],
   );
@@ -35,12 +35,12 @@ export const useQueryParams = () => {
     (params: ParsedUrlQueryInput) => {
       return addQueryParamsLast(params);
     },
-    [router],
+    [addQueryParamsLast],
   );
 
   const addQueryParamsFirst = useCallback(
     (params: ParsedUrlQueryInput) => {
-      queryParamsQueue.unshift({ router, params });
+      void queryParamsQueue.unshift({ router, params });
     },
     [router],
   );
