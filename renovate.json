@@ -5,7 +5,8 @@
     {
       "matchUpdateTypes": ["minor", "patch"],
       "matchCurrentVersion": "!/^0/",
-      "automerge": true
+      "automerge": true,
+      "rebaseWhen": "behind-base-branch"
     }
   ],
   "updateInternalDeps": true
