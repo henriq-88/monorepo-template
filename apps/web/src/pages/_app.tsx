@@ -4,7 +4,7 @@ import type { Session } from "next-auth";
 import type { AppType } from "next/app";
 import { api } from "../api";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
-import { Quicksand } from "@next/font/google";
+import { Quicksand } from "next/font/google";
 
 const titleThemeFontFamily = Quicksand({ subsets: ["latin"], weight: ["700"] });
 const bodyThemeFontFamily = Quicksand({ subsets: ["latin"], weight: ["300"] });

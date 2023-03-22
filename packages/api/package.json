@@ -5,20 +5,20 @@
   "types": "./index.ts",
   "license": "MIT",
   "scripts": {
-    "clean": "rd /s /q .turbo node_modules",
+    "clean": "git clean -xdf node_modules .turbo",
     "lint": "eslint",
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@wassdahl/auth": "*",
-    "@wassdahl/db": "*",
-    "@trpc/client": "^10.9.0",
-    "@trpc/server": "^10.9.0",
+    "@trpc/client": "^10.17.0",
+    "@trpc/server": "^10.17.0",
+    "@wassdahl/auth": "^0.1.0",
+    "@wassdahl/db": "^0.1.0",
     "superjson": "1.12.1",
-    "zod": "^3.20.2"
+    "zod": "^3.21.4"
   },
   "devDependencies": {
-    "eslint": "^8.31.0",
-    "typescript": "^4.9.4"
+    "eslint": "^8.36.0",
+    "typescript": "^4.9.5"
   }
 }
