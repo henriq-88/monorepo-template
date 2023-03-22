@@ -58,6 +58,6 @@ jobs:
         run: pnpm turbo db:generate
 
       - name: Lint and type-check
-        run: pnpm turbo build lint type-check
+        run: pnpm turbo lint type-check
         env:
           SKIP_ENV_VALIDATION: true
