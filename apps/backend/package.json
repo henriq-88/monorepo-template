@@ -27,7 +27,7 @@
     "nextjs-cors": "2.1.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "swagger-ui-react": "4.15.5",
+    "swagger-ui-react": "4.19.1",
     "trpc-openapi": "1.1.1",
     "zod": "^3.21.4"
   },
@@ -36,7 +36,7 @@
     "@types/node": "^18.15.5",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
-    "@types/swagger-ui-react": "4.11.0",
+    "@types/swagger-ui-react": "4.18.0",
     "autoprefixer": "^10.4.14",
     "dotenv-cli": "^6.0.0",
     "eslint": "^8.36.0",
