@@ -34,7 +34,7 @@
     "@types/react-dom": "^18.0.11",
     "autoprefixer": "^10.4.14",
     "babel-loader": "8.3.0",
-    "dotenv-cli": "^6.0.0",
+    "dotenv-cli": "^7.0.0",
     "eslint": "^8.36.0",
     "postcss": "^8.4.21",
     "storybook-addon-sass-postcss": "0.1.3",
