@@ -1,7 +1,7 @@
 {
   "name": "monorepo-template",
   "private": true,
-  "packageManager": "pnpm@7.30.1",
+  "packageManager": "pnpm@7.33.6",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "build": "turbo build",
